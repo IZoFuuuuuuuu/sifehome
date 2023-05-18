@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="mainhome.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h1 class="logo"><strong>Text</strong></h1>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="3dbback.mp4" autoplay muted loop></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>text</h2>
+        <p>こんにちは(⌒∇⌒)</p>
+        <p>texttexttexttexttexttext</p>
+        <p>texttexttexttexttexttext</p>
+        <a href="#">Prototype AI<ion-icon name="caret-forward-outline"></ion-icon><ion-icon name="caret-forward-outline"></ion-icon><ion-icon name="caret-forward-outline"></ion-icon></a>
+      </div>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href=""><ion-icon name="home-outline"></ion-icon> Home</a></li>
+        <li><a href=""><ion-icon name="person-circle-outline"></ion-icon> Profile</a></li>
+        <li><a href=""><ion-icon name="document-text-outline"></ion-icon> Overview</a></li>
+        <li><a href=""><ion-icon name="code-outline"></ion-icon> Site Code</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", function () {
+        /* activeにする */
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
